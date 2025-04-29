@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 166 76% 42%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -96,6 +99,77 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-poppins;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-primary;
+  }
+
+  .highlight-text {
+    @apply relative inline-block;
+  }
+  
+  .highlight-text::after {
+    content: '';
+    @apply absolute w-full h-1 bg-infine-teal bottom-0 left-0 rounded-full transform scale-x-0 origin-bottom-right transition-transform duration-300;
+  }
+  
+  .highlight-text:hover::after {
+    @apply transform scale-x-100 origin-bottom-left;
+  }
+  
+  .animated-icon {
+    @apply transform transition-all duration-300 ease-in-out hover:scale-110;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-infine-teal rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-infine-green;
+  }
+
+  .staggered-fade-in > * {
+    opacity: 0;
+  }
+  
+  .staggered-fade-in > *:nth-child(1) {
+    animation: fade-in 0.5s ease-out 0.1s forwards;
+  }
+  
+  .staggered-fade-in > *:nth-child(2) {
+    animation: fade-in 0.5s ease-out 0.3s forwards;
+  }
+  
+  .staggered-fade-in > *:nth-child(3) {
+    animation: fade-in 0.5s ease-out 0.5s forwards;
+  }
+  
+  .staggered-fade-in > *:nth-child(4) {
+    animation: fade-in 0.5s ease-out 0.7s forwards;
+  }
+  
+  .staggered-fade-in > *:nth-child(5) {
+    animation: fade-in 0.5s ease-out 0.9s forwards;
+  }
+  
+  .staggered-fade-in > *:nth-child(6) {
+    animation: fade-in 0.5s ease-out 1.1s forwards;
   }
 }
