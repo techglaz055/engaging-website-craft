@@ -133,9 +133,9 @@ const Index = () => {
                 <img 
                   src="https://images.unsplash.com/photo-1573164574230-db1d5e960238?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
                   alt="Coaching Discussion" 
-                  className="rounded-lg shadow-xl animate-fade-right"
+                  className="rounded-lg shadow-xl animate-fade-right float"
                 />
-                <div className="absolute -bottom-6 -left-6 bg-infine-teal text-white p-4 rounded-lg animate-fade-in">
+                <div className="absolute -bottom-6 -left-6 bg-infine-teal text-white p-4 rounded-lg animate-fade-in float-delay-2">
                   <div className="font-bold text-xl">Creative Result</div>
                   <div>Award Winning</div>
                 </div>
@@ -148,26 +148,26 @@ const Index = () => {
                 title="Expert guidance and personalized coaching."
               />
 
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-6 animate-fade-in" style={{ animationDelay: '0.3s' }}>
                 Receive tailored coaching that empowers you to navigate challenges and achieve your personal and professional goals. With expert guidance.
               </p>
 
               <ul className="space-y-3 mb-8">
-                <li className="flex items-start">
-                  <Check className="h-5 w-5 text-infine-teal mr-2 mt-1" />
+                <li className="flex items-start animate-fade-in" style={{ animationDelay: '0.4s' }}>
+                  <Check className="h-5 w-5 text-infine-teal mr-2 mt-1 float" />
                   <span>Goal Setting And Accountability</span>
                 </li>
-                <li className="flex items-start">
-                  <Check className="h-5 w-5 text-infine-teal mr-2 mt-1" />
+                <li className="flex items-start animate-fade-in" style={{ animationDelay: '0.5s' }}>
+                  <Check className="h-5 w-5 text-infine-teal mr-2 mt-1 float-delay-1" />
                   <span>Mindset And Confidence Building</span>
                 </li>
-                <li className="flex items-start">
-                  <Check className="h-5 w-5 text-infine-teal mr-2 mt-1" />
+                <li className="flex items-start animate-fade-in" style={{ animationDelay: '0.6s' }}>
+                  <Check className="h-5 w-5 text-infine-teal mr-2 mt-1 float-delay-2" />
                   <span>Personalized Development Plans</span>
                 </li>
               </ul>
 
-              <Button asChild className="bg-gradient-primary hover:bg-infine-green transition-all duration-300">
+              <Button asChild className="bg-gradient-primary hover:bg-infine-green transition-all duration-300 animate-fade-in pulse-on-hover" style={{ animationDelay: '0.7s' }}>
                 <Link to="/about" className="flex items-center">
                   Get In Touch <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -195,36 +195,42 @@ const Index = () => {
               icon={<svg className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>}
               title="Personal Coaching"
               description="One-on-one sessions to achieve personal goals and enhance self-awareness."
+              delay={1}
             />
             <ServiceCard 
               icon={<svg className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0-2.08.402-2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>}
               title="Business Coaching"
               description="Strategic guidance for entrepreneurs, executives, and businesses to achieve growth and efficiency."
+              delay={2}
             />
             <ServiceCard 
               icon={<svg className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" /></svg>}
               title="Career Development"
               description="Guidance on career transitions, job search strategies, and skill enhancement."
+              delay={3}
             />
             <ServiceCard 
               icon={<svg className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>}
               title="Team Coaching"
               description="Enhancing teamwork, collaboration, and communication within organizations."
+              delay={4}
             />
             <ServiceCard 
               icon={<svg className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>}
               title="Relationship Coaching"
               description="Building better personal and professional relationships through improved communication."
+              delay={5}
             />
             <ServiceCard 
               icon={<svg className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>}
               title="Spiritual Coaching"
               description="Finding purpose, meaning, and balance in life through spiritual guidance."
+              delay={1}
             />
           </div>
 
           <div className="mt-12 text-center">
-            <Button asChild className="bg-infine-teal hover:bg-infine-green text-white transition-all duration-300">
+            <Button asChild className="bg-infine-teal hover:bg-infine-green text-white transition-all duration-300 pulse-on-hover">
               <Link to="/consultancy" className="flex items-center">
                 View All Services <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
@@ -244,40 +250,40 @@ const Index = () => {
           />
 
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 staggered-fade-in">
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 pulse-on-hover">
               <div className="h-48 bg-infine-darkblue flex items-center justify-center">
-                <Book className="h-16 w-16 text-infine-teal" />
+                <Book className="h-16 w-16 text-infine-teal float" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-3">Executive Coaching</h3>
                 <p className="text-gray-600 mb-4">Tailored support for leaders to enhance their effectiveness, strategic thinking, and leadership skills.</p>
-                <Button asChild className="bg-gradient-primary hover:bg-infine-green w-full">
+                <Button asChild className="bg-gradient-primary hover:bg-infine-green w-full pulse-on-hover">
                   <Link to="/programs">Learn More</Link>
                 </Button>
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 pulse-on-hover">
               <div className="h-48 bg-infine-darkblue flex items-center justify-center">
-                <Briefcase className="h-16 w-16 text-infine-teal" />
+                <Briefcase className="h-16 w-16 text-infine-teal float-delay-2" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-3">Business Growth</h3>
                 <p className="text-gray-600 mb-4">Strategic guidance for business owners and entrepreneurs to scale their businesses effectively.</p>
-                <Button asChild className="bg-gradient-primary hover:bg-infine-green w-full">
+                <Button asChild className="bg-gradient-primary hover:bg-infine-green w-full pulse-on-hover">
                   <Link to="/programs">Learn More</Link>
                 </Button>
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 pulse-on-hover">
               <div className="h-48 bg-infine-darkblue flex items-center justify-center">
-                <Phone className="h-16 w-16 text-infine-teal" />
+                <Phone className="h-16 w-16 text-infine-teal float-delay-4" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-3">Life Transformation</h3>
                 <p className="text-gray-600 mb-4">Comprehensive personal development program to help you achieve harmony in all areas of life.</p>
-                <Button asChild className="bg-gradient-primary hover:bg-infine-green w-full">
+                <Button asChild className="bg-gradient-primary hover:bg-infine-green w-full pulse-on-hover">
                   <Link to="/programs">Learn More</Link>
                 </Button>
               </div>
@@ -295,31 +301,37 @@ const Index = () => {
             align="center"
           />
 
-          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <VideoCard 
-              thumbnail="https://i.ytimg.com/vi/FD9qVvvY_YU/hqdefault.jpg"
-              title="Goal Setting Strategies for Success"
-              duration="10:15"
-              videoId="FD9qVvvY_YU"
-            />
-            <VideoCard 
-              thumbnail="https://i.ytimg.com/vi/5yBU1ELFXfI/hqdefault.jpg"
-              title="Building Confidence in Business"
-              duration="8:32"
-              videoId="5yBU1ELFXfI"
-            />
-            <VideoCard 
-              thumbnail="https://i.ytimg.com/vi/skP7ISL1JBU/hqdefault.jpg"
-              title="Leadership Skills for the Modern World"
-              duration="15:47"
-              videoId="skP7ISL1JBU"
-            />
+          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 staggered-fade-in">
+            <div className="pulse-on-hover">
+              <VideoCard 
+                thumbnail="https://i.ytimg.com/vi/FD9qVvvY_YU/hqdefault.jpg"
+                title="Goal Setting Strategies for Success"
+                duration="10:15"
+                videoId="FD9qVvvY_YU"
+              />
+            </div>
+            <div className="pulse-on-hover">
+              <VideoCard 
+                thumbnail="https://i.ytimg.com/vi/5yBU1ELFXfI/hqdefault.jpg"
+                title="Building Confidence in Business"
+                duration="8:32"
+                videoId="5yBU1ELFXfI"
+              />
+            </div>
+            <div className="pulse-on-hover">
+              <VideoCard 
+                thumbnail="https://i.ytimg.com/vi/skP7ISL1JBU/hqdefault.jpg"
+                title="Leadership Skills for the Modern World"
+                duration="15:47"
+                videoId="skP7ISL1JBU"
+              />
+            </div>
           </div>
 
           <div className="mt-12 text-center">
-            <Button asChild variant="outline" className="border-infine-teal text-infine-teal hover:bg-infine-teal hover:text-white">
+            <Button asChild variant="outline" className="border-infine-teal text-infine-teal hover:bg-infine-teal hover:text-white pulse-on-hover">
               <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="flex items-center">
-                <Play className="mr-2 h-4 w-4" /> Visit Our Channel
+                <Play className="mr-2 h-4 w-4 float" /> Visit Our Channel
               </a>
             </Button>
           </div>
